@@ -5,7 +5,7 @@
 
 import { useState, useRef, useEffect, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ContextLog, UniverseType, ThemeStyles } from "@packages/shared";
+import { ContextLog, UniverseType, ThemeStyles } from "./types.js";
 import { Terminal, Send, Github, Settings, Feather, Compass, RefreshCw } from "lucide-react";
 
 interface ContextStreamProps {

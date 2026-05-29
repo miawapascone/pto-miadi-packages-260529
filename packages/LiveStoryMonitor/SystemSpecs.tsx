@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { X, Layers, Terminal, Compass, Zap, ShieldAlert, Cpu } from "lucide-react";
+import { X, Layers, Compass, Zap, ShieldAlert, Cpu } from "lucide-react";
 
 interface SystemSpecsProps {
   onClose: () => void;
@@ -25,8 +25,8 @@ export default function SystemSpecs({ onClose }: SystemSpecsProps) {
           <div className="flex items-center gap-2.5">
             <Layers size={18} className="text-cyan-400" />
             <div className="font-mono text-left">
-              <h2 className="text-sm font-bold text-slate-100 uppercase tracking-wider">System Archeology Spec</h2>
-              <p className="text-[10px] text-slate-500">Document ID: live-story-monitor-master-spec-v1.0</p>
+              <h2 className="text-sm font-bold text-slate-100 uppercase tracking-wider">System Architecture Spec</h2>
+              <p className="text-[10px] text-slate-500">Document ID: live-story-monitor-master-spec-v1.2</p>
             </div>
           </div>
           <button
@@ -48,7 +48,7 @@ export default function SystemSpecs({ onClose }: SystemSpecsProps) {
                 <span>Wave 1 Scaffold</span>
               </div>
               <p className="text-[11px] text-slate-400">
-                Laying the groundwork at the application level to model multi-universe narratives, easily decompilable into standard modules.
+                Laying the groundwork to model multi-universe narratives, easily decompilable into standard modules.
               </p>
             </div>
             <div className="p-4 bg-slate-950/60 border border-slate-800/40 rounded-lg space-y-2">
@@ -57,7 +57,7 @@ export default function SystemSpecs({ onClose }: SystemSpecsProps) {
                 <span>Workspaces Support</span>
               </div>
               <p className="text-[11px] text-slate-400">
-                NPM workspaces are enabled via the packages directories (`packages/*`). Shares definitions seamlessly via tsconfig pathways.
+                NPM workspaces are enabled via packages directory bindings. Shares definitions seamlessly via tsconfig pathways.
               </p>
             </div>
             <div className="p-4 bg-slate-950/60 border border-slate-800/40 rounded-lg space-y-2">
@@ -80,19 +80,17 @@ export default function SystemSpecs({ onClose }: SystemSpecsProps) {
 ├── tsconfig.json                         # Defines path aliases to packages
 ├── vite.config.ts                       # Dual-resolve mappings for Vite client routes
 ├── server.ts                             # Custom Express server running SSE log ingest & Gemini proxies
-├── packages/
-│   ├── shared/                           # GENERAL LOGIC AND DATA TYPE SPECS
-│   │   ├── package.json
-│   │   ├── types.ts                      # Common standard interfaces (StoryScene, ContextLog)
-│   │   ├── templates.ts                  # SpecLang development context logs and fallback templates
-│   │   └── index.ts                      # Common export gateway
-│   └── components/                       # REUSABLE NARRATIVE FRONTEND PORTALS (STANDALONE LIBRARY)
-│       ├── package.json
-│       ├── index.ts                      # Export gateway for all components
-│       ├── BootSequence.tsx
-│       ├── ContextStream.tsx
-│       ├── NarrativeMirror.tsx
-│       └── SystemSpecs.tsx`}
+├── GEMINI.md                             # Multi-persona prototyping guidelines & rules
+└── packages/
+    └── LiveStoryMonitor/                 # CONSOLIDATED MULTI-UNIVERSE LOGIC & GRAPHICAL PORTALS
+        ├── package.json
+        ├── index.ts                      # Common export gateway
+        ├── types.ts                      # Common standard interfaces (StoryScene, ContextLog)
+        ├── templates.ts                  # SpecLang development context logs and fallback templates
+        ├── BootSequence.tsx
+        ├── ContextStream.tsx
+        ├── NarrativeMirror.tsx
+        └── SystemSpecs.tsx`}
             </div>
           </div>
 

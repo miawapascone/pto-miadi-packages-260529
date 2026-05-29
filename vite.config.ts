@@ -9,8 +9,7 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
-        '@packages/shared': path.resolve(__dirname, './packages/shared/index.ts'),
-        '@packages/components': path.resolve(__dirname, './packages/components/index.ts'),
+        '@packages/live-story-monitor': path.resolve(__dirname, './packages/LiveStoryMonitor/index.ts'),
       },
     },
     server: {

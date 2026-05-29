@@ -17,8 +17,8 @@ import {
   SPECLANG_PORTAL_EVENTS, 
   SPECLANG_INITIAL_LOGS, 
   SPECLANG_PORTAL_SCENES 
-} from "./packages/shared/templates.ts";
-import { StoryScene, ContextLog, UniverseType } from "./packages/shared/types.ts";
+} from "./packages/LiveStoryMonitor/templates.ts";
+import { StoryScene, ContextLog, UniverseType } from "./packages/LiveStoryMonitor/types.ts";
 
 const app = express();
 const PORT = 3000;

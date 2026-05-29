@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Terminal, Shield, Wifi, Compass, Layers } from "lucide-react";
+import { Terminal, Shield, Wifi, Layers } from "lucide-react";
 
 interface BootSequenceProps {
   onComplete: () => void;
@@ -19,7 +19,7 @@ export default function BootSequence({ onComplete }: BootSequenceProps) {
 
   const steps = [
     { threshold: 15, log: "Connecting to workspace redis stream... [OK]" },
-    { threshold: 35, log: "Mapping package workspaces (@packages/shared)... [OK]" },
+    { threshold: 35, log: "Mapping package workspaces (@packages/live-story-monitor)... [OK]" },
     { threshold: 55, log: "Calibrating structural tension diagnostics... [OK]" },
     { threshold: 75, log: "Loading SpecLang narrative templates... [OK]" },
     { threshold: 90, log: "Initializing multi-universe portals... [OK]" },

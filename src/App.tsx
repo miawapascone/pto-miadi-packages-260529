@@ -5,10 +5,10 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { StoryScene, ContextLog, ToastMessage, UniverseType, ThemeStyles } from "@packages/shared";
-
-// Sub components from workspace library
-import { BootSequence, ContextStream, NarrativeMirror, SystemSpecs } from "@packages/components";
+import { 
+  StoryScene, ContextLog, ToastMessage, UniverseType, ThemeStyles,
+  BootSequence, ContextStream, NarrativeMirror, SystemSpecs 
+} from "@packages/live-story-monitor";
 
 // Lucide icons
 import { 

@@ -5,7 +5,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { StoryScene, ThemeStyles } from "@packages/shared";
+import { StoryScene, ThemeStyles } from "./types.js";
 import { 
   Sparkles, RefreshCw, Archive, Download, Compass, 
   HelpCircle, BookOpen, AlertCircle, Quote 

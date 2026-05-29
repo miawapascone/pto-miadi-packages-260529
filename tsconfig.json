@@ -19,11 +19,8 @@
       "@/*": [
         "./*"
       ],
-      "@packages/shared": [
-        "./packages/shared/index.ts"
-      ],
-      "@packages/components": [
-        "./packages/components/index.ts"
+      "@packages/live-story-monitor": [
+        "./packages/LiveStoryMonitor/index.ts"
       ]
     },
     "allowImportingTsExtensions": true,
