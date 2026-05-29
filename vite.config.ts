@@ -10,6 +10,7 @@ export default defineConfig(() => {
       alias: {
         '@': path.resolve(__dirname, '.'),
         '@packages/shared': path.resolve(__dirname, './packages/shared/index.ts'),
+        '@packages/components': path.resolve(__dirname, './packages/components/index.ts'),
       },
     },
     server: {

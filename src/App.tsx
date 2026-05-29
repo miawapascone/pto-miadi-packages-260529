@@ -7,11 +7,8 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { StoryScene, ContextLog, ToastMessage, UniverseType, ThemeStyles } from "@packages/shared";
 
-// Sub components
-import BootSequence from "./components/BootSequence.tsx";
-import ContextStream from "./components/ContextStream.tsx";
-import NarrativeMirror from "./components/NarrativeMirror.tsx";
-import SystemSpecs from "./components/SystemSpecs.tsx";
+// Sub components from workspace library
+import { BootSequence, ContextStream, NarrativeMirror, SystemSpecs } from "@packages/components";
 
 // Lucide icons
 import { 

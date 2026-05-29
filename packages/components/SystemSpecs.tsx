@@ -77,21 +77,22 @@ export default function SystemSpecs({ onClose }: SystemSpecsProps) {
             <div className="p-4 bg-slate-950 rounded-lg border border-slate-800 text-cyan-500/80 select-all font-mono">
 {`live-story-monitor (Workspace Root)
 ├── package.json                         # Declares npm "workspaces": ["packages/*"]
-├── tsconfig.json                         # Defines "@packages/shared" path aliases
+├── tsconfig.json                         # Defines path aliases to packages
 ├── vite.config.ts                       # Dual-resolve mappings for Vite client routes
 ├── server.ts                             # Custom Express server running SSE log ingest & Gemini proxies
 ├── packages/
-│   └── shared/                           # CORE REUSABLE MULTI-PACKAGE
-│       ├── package.json                  # Workspace exports configuration
-│       ├── types.ts                      # Common standard interfaces (StoryScene, ContextLog)
-│       ├── templates.ts                  # SpecLang development context logs and stories
-│       └── index.ts                      # Common export gateway
-└── src/
-    ├── App.tsx                           # Master orchestrator layout
-    ├── components/
-    │   ├── BootSequence.tsx              # Ceremonial transition sequences
-    │   ├── ContextStream.tsx             # Scrolling live logs and reflection input
-    │   └── NarrativeMirror.tsx           # Immersive prose, tension gauge, actions`}
+│   ├── shared/                           # GENERAL LOGIC AND DATA TYPE SPECS
+│   │   ├── package.json
+│   │   ├── types.ts                      # Common standard interfaces (StoryScene, ContextLog)
+│   │   ├── templates.ts                  # SpecLang development context logs and fallback templates
+│   │   └── index.ts                      # Common export gateway
+│   └── components/                       # REUSABLE NARRATIVE FRONTEND PORTALS (STANDALONE LIBRARY)
+│       ├── package.json
+│       ├── index.ts                      # Export gateway for all components
+│       ├── BootSequence.tsx
+│       ├── ContextStream.tsx
+│       ├── NarrativeMirror.tsx
+│       └── SystemSpecs.tsx`}
             </div>
           </div>
 

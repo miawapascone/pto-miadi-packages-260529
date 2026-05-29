@@ -21,6 +21,9 @@
       ],
       "@packages/shared": [
         "./packages/shared/index.ts"
+      ],
+      "@packages/components": [
+        "./packages/components/index.ts"
       ]
     },
     "allowImportingTsExtensions": true,
