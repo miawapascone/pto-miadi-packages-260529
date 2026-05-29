@@ -1,0 +1,6 @@
+{
+  "name": "Live Story Monitor",
+  "description": "A real-time ceremonial interface transforming development telemetry into immersive story scenes across three narrative universes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
